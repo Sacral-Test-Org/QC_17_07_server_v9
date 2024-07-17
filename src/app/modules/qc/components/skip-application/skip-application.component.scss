@@ -1,0 +1,71 @@
+/* src/app/modules/qc/components/skip-application/skip-application.component.scss */
+
+/* General form styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Skip button styling */
+button.skip-button {
+  background-color: #ff6b6b;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.skip-button:hover {
+  background-color: #ff4c4c;
+}
+
+/* Input field styling */
+input, select, textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Error message styling */
+.error-message {
+  color: #ff0000;
+  font-size: 0.875rem;
+  margin-top: -0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Label styling */
+label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+/* Container for reason and comments */
+.reason-comments-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Container for error messages */
+.error-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}

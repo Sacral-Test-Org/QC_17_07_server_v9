@@ -1,0 +1,6 @@
+<div class="delivery-type-container">
+  <label for="deliveryType">Delivery Type:</label>
+  <select id="deliveryType" (change)="onDeliveryTypeChange($event)">
+    <option *ngFor="let type of deliveryTypes$ | async" [value]="type">{{ type }}</option>
+  </select>
+</div>

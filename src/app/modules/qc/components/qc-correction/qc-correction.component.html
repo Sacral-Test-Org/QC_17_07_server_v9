@@ -1,0 +1,169 @@
+<div class="qc-correction-container">
+  <h1>QC Correction</h1>
+  <form>
+    <div class="form-group">
+      <label for="contractId">Contract ID</label>
+      <input type="text" id="contractId" name="contractId" [(ngModel)]="qcData.contractId" required>
+    </div>
+    <div class="form-group">
+      <label for="versionNo">Version No</label>
+      <input type="text" id="versionNo" name="versionNo" [(ngModel)]="qcData.versionNo" required>
+    </div>
+    <div class="form-group">
+      <label for="objectId">Object ID</label>
+      <input type="text" id="objectId" name="objectId" [(ngModel)]="qcData.objectId" required>
+    </div>
+    <div class="form-group">
+      <label for="actionCode">Action Code</label>
+      <input type="text" id="actionCode" name="actionCode" [(ngModel)]="qcData.actionCode" required>
+    </div>
+    <div class="form-group">
+      <label for="topIndicator">Top Indicator</label>
+      <input type="text" id="topIndicator" name="topIndicator" [(ngModel)]="qcData.topIndicator" required>
+    </div>
+    <div class="form-group">
+      <label for="partitionNo">Partition No</label>
+      <input type="text" id="partitionNo" name="partitionNo" [(ngModel)]="qcData.partitionNo" required>
+    </div>
+    <div class="form-group">
+      <label for="coverCode">Cover Code</label>
+      <input type="text" id="coverCode" name="coverCode" [(ngModel)]="qcData.coverCode" required>
+    </div>
+    <div class="form-group">
+      <label for="coverNo">Cover No</label>
+      <input type="text" id="coverNo" name="coverNo" [(ngModel)]="qcData.coverNo" required>
+    </div>
+    <div class="form-group">
+      <label for="previousVersion">Previous Version</label>
+      <input type="text" id="previousVersion" name="previousVersion" [(ngModel)]="qcData.previousVersion" required>
+    </div>
+    <div class="form-group">
+      <label for="reversingVersion">Reversing Version</label>
+      <input type="text" id="reversingVersion" name="reversingVersion" [(ngModel)]="qcData.reversingVersion" required>
+    </div>
+    <div class="form-group">
+      <label for="sumInsuredWholeCover">Sum Insured Whole Cover</label>
+      <input type="text" id="sumInsuredWholeCover" name="sumInsuredWholeCover" [(ngModel)]="qcData.sumInsuredWholeCover" required>
+    </div>
+    <div class="form-group">
+      <label for="sumInsuredWholeCoverSwf">Sum Insured Whole Cover SWF</label>
+      <input type="text" id="sumInsuredWholeCoverSwf" name="sumInsuredWholeCoverSwf" [(ngModel)]="qcData.sumInsuredWholeCoverSwf" required>
+    </div>
+    <div class="form-group">
+      <label for="sumInsuredCompanyShare">Sum Insured Company Share</label>
+      <input type="text" id="sumInsuredCompanyShare" name="sumInsuredCompanyShare" [(ngModel)]="qcData.sumInsuredCompanyShare" required>
+    </div>
+    <div class="form-group">
+      <label for="sumInsuredCompanyShareSwf">Sum Insured Company Share SWF</label>
+      <input type="text" id="sumInsuredCompanyShareSwf" name="sumInsuredCompanyShareSwf" [(ngModel)]="qcData.sumInsuredCompanyShareSwf" required>
+    </div>
+    <div class="form-group">
+      <label for="ftPremiumOrWholeCover">FT Premium or Whole Cover</label>
+      <input type="text" id="ftPremiumOrWholeCover" name="ftPremiumOrWholeCover" [(ngModel)]="qcData.ftPremiumOrWholeCover" required>
+    </div>
+    <div class="form-group">
+      <label for="ftPremiumOrWholeCoverSwf">FT Premium or Whole Cover SWF</label>
+      <input type="text" id="ftPremiumOrWholeCoverSwf" name="ftPremiumOrWholeCoverSwf" [(ngModel)]="qcData.ftPremiumOrWholeCoverSwf" required>
+    </div>
+    <div class="form-group">
+      <label for="ftPremiumSysCompanyShare">FT Premium Sys Company Share</label>
+      <input type="text" id="ftPremiumSysCompanyShare" name="ftPremiumSysCompanyShare" [(ngModel)]="qcData.ftPremiumSysCompanyShare" required>
+    </div>
+    <div class="form-group">
+      <label for="ftPremiumSysCompShareSwf">FT Premium Sys Comp Share SWF</label>
+      <input type="text" id="ftPremiumSysCompShareSwf" name="ftPremiumSysCompShareSwf" [(ngModel)]="qcData.ftPremiumSysCompShareSwf" required>
+    </div>
+    <div class="form-group">
+      <label for="agentCommissionWholeCover">Agent Commission Whole Cover</label>
+      <input type="text" id="agentCommissionWholeCover" name="agentCommissionWholeCover" [(ngModel)]="qcData.agentCommissionWholeCover" required>
+    </div>
+    <div class="form-group">
+      <label for="agentCommissionWholeCovSwf">Agent Commission Whole Cover SWF</label>
+      <input type="text" id="agentCommissionWholeCovSwf" name="agentCommissionWholeCovSwf" [(ngModel)]="qcData.agentCommissionWholeCovSwf" required>
+    </div>
+    <div class="form-group">
+      <label for="agentCommissionCompanyShare">Agent Commission Company Share</label>
+      <input type="text" id="agentCommissionCompanyShare" name="agentCommissionCompanyShare" [(ngModel)]="qcData.agentCommissionCompanyShare" required>
+    </div>
+    <div class="form-group">
+      <label for="agentCommissionComShareSwf">Agent Commission Com Share SWF</label>
+      <input type="text" id="agentCommissionComShareSwf" name="agentCommissionComShareSwf" [(ngModel)]="qcData.agentCommissionComShareSwf" required>
+    </div>
+    <div class="form-group">
+      <label for="sharePortion">Share Portion</label>
+      <input type="text" id="sharePortion" name="sharePortion" [(ngModel)]="qcData.sharePortion" required>
+    </div>
+    <div class="form-group">
+      <label for="cvcCode">CVC Code</label>
+      <input type="text" id="cvcCode" name="cvcCode" [(ngModel)]="qcData.cvcCode" required>
+    </div>
+    <div class="form-group">
+      <label for="surchargeDiscount">Surcharge Discount</label>
+      <input type="text" id="surchargeDiscount" name="surchargeDiscount" [(ngModel)]="qcData.surchargeDiscount" required>
+    </div>
+    <div class="form-group">
+      <label for="ftPremiumOrCompanyShare">FT Premium or Company Share</label>
+      <input type="text" id="ftPremiumOrCompanyShare" name="ftPremiumOrCompanyShare" [(ngModel)]="qcData.ftPremiumOrCompanyShare" required>
+    </div>
+    <div class="form-group">
+      <label for="ftPremiumOrCompanyShareSwf">FT Premium or Company Share SWF</label>
+      <input type="text" id="ftPremiumOrCompanyShareSwf" name="ftPremiumOrCompanyShareSwf" [(ngModel)]="qcData.ftPremiumOrCompanyShareSwf" required>
+    </div>
+    <div class="form-group">
+      <label for="ftPremiumSysWholeCover">FT Premium Sys Whole Cover</label>
+      <input type="text" id="ftPremiumSysWholeCover" name="ftPremiumSysWholeCover" [(ngModel)]="qcData.ftPremiumSysWholeCover" required>
+    </div>
+    <div class="form-group">
+      <label for="ftPremiumSysWholeCoverSwf">FT Premium Sys Whole Cover SWF</label>
+      <input type="text" id="ftPremiumSysWholeCoverSwf" name="ftPremiumSysWholeCoverSwf" [(ngModel)]="qcData.ftPremiumSysWholeCoverSwf" required>
+    </div>
+    <div class="form-group">
+      <label for="reinsurableRiskAmount">Reinsurable Risk Amount</label>
+      <input type="text" id="reinsurableRiskAmount" name="reinsurableRiskAmount" [(ngModel)]="qcData.reinsurableRiskAmount" required>
+    </div>
+    <div class="form-group">
+      <label for="reinsurableRiskAmountSwf">Reinsurable Risk Amount SWF</label>
+      <input type="text" id="reinsurableRiskAmountSwf" name="reinsurableRiskAmountSwf" [(ngModel)]="qcData.reinsurableRiskAmountSwf" required>
+    </div>
+    <div class="form-group">
+      <label for="pcovContractId">PCOV Contract ID</label>
+      <input type="text" id="pcovContractId" name="pcovContractId" [(ngModel)]="qcData.pcovContractId" required>
+    </div>
+    <div class="form-group">
+      <label for="pcovPartitionNo">PCOV Partition No</label>
+      <input type="text" id="pcovPartitionNo" name="pcovPartitionNo" [(ngModel)]="qcData.pcovPartitionNo" required>
+    </div>
+    <div class="form-group">
+      <label for="pcovCoverCode">PCOV Cover Code</label>
+      <input type="text" id="pcovCoverCode" name="pcovCoverCode" [(ngModel)]="qcData.pcovCoverCode" required>
+    </div>
+    <div class="form-group">
+      <label for="pcovCoverNo">PCOV Cover No</label>
+      <input type="text" id="pcovCoverNo" name="pcovCoverNo" [(ngModel)]="qcData.pcovCoverNo" required>
+    </div>
+    <div class="form-group">
+      <label for="errorCategory">Error Category</label>
+      <select id="errorCategory" name="errorCategory" [(ngModel)]="qcData.errorCategory" required>
+        <option value="3">Category 3</option>
+        <option value="10">Category 10</option>
+        <option value="11">Category 11</option>
+        <!-- Add other categories as needed -->
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Radio Button</label>
+      <div>
+        <input type="radio" id="radioY" name="radioButton" value="Y" [(ngModel)]="qcData.radioButton" (change)="onRadioChange('Y')">
+        <label for="radioY">Y</label>
+      </div>
+      <div>
+        <input type="radio" id="radioN" name="radioButton" value="N" [(ngModel)]="qcData.radioButton" (change)="onRadioChange('N')">
+        <label for="radioN">N</label>
+      </div>
+    </div>
+    <div *ngIf="alertMessage" class="alert alert-warning">
+      {{ alertMessage }}
+    </div>
+    <button type="submit" (click)="onSubmit()">Submit</button>
+  </form>
+</div>

@@ -1,0 +1,25 @@
+<div class="phy-copy-reprint-container">
+  <h2>Manage Reprinting Process for Physical Copies</h2>
+  
+  <form>
+    <div class="form-group">
+      <label for="phyMoveReprinting">Move To printing Bucket For Physical Copy:</label>
+      <div>
+        <input type="radio" id="phyMoveReprintingX" name="phyMoveReprinting" value="X" [(ngModel)]="phyMoveReprinting" checked>
+        <label for="phyMoveReprintingX">X</label>
+      </div>
+      <div>
+        <input type="radio" id="phyMoveReprintingY" name="phyMoveReprinting" value="Y" [(ngModel)]="phyMoveReprinting">
+        <label for="phyMoveReprintingY">Y</label>
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <button type="button" (click)="onOkClick()">Ok</button>
+    </div>
+    
+    <div *ngIf="message" class="message">
+      {{ message }}
+    </div>
+  </form>
+</div>

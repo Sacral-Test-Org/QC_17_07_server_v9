@@ -1,0 +1,55 @@
+/* src/app/modules/qc/components/phy-copy-reprint/phy-copy-reprint.component.scss */
+
+/* General Styles */
+:host {
+  display: block;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+/* Radio Button Styles */
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.radio-group input[type="radio"] {
+  margin-right: 10px;
+}
+
+/* Ok Button Styles */
+.ok-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.ok-button:hover {
+  background-color: #0056b3;
+}
+
+/* Message Display Styles */
+.message {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #d9534f; /* Error message color */
+}
+
+.message.success {
+  color: #5cb85c; /* Success message color */
+}

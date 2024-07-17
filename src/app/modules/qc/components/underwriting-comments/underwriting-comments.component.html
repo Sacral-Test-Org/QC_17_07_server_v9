@@ -1,0 +1,40 @@
+<div class="underwriting-comments-container">
+  <!-- Input field for entering the policy number -->
+  <div class="policy-input">
+    <label for="policyNumber">Enter Policy Number:</label>
+    <input type="text" id="policyNumber" [(ngModel)]="policyNumber" placeholder="Policy Number">
+    <button (click)="fetchComments()">Fetch Comments</button>
+  </div>
+
+  <!-- Container for displaying fetched comments -->
+  <div *ngIf="comments && comments.length > 0" class="comments-section">
+    <h3>Underwriting Comments</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>User ID</th>
+          <th>Date & Time</th>
+          <th>Comments</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let comment of comments">
+          <td>{{ comment.userId }}</td>
+          <td>{{ comment.commentDate | date: 'short' }}</td>
+          <td>{{ comment.comments.replace(/[\r\n]+/g, ', ') }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Message to display if no comments are found -->
+  <div *ngIf="comments && comments.length === 0" class="no-comments-alert">
+    <p>No underwriting comments found for the policy number {{ policyNumber }}.</p>
+    <button (click)="navigateBack()">Back to QC Block</button>
+  </div>
+
+  <!-- Error message display -->
+  <div *ngIf="errorMessage" class="error-message">
+    <p>{{ errorMessage }}</p>
+  </div>
+</div>

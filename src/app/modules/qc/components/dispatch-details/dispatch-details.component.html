@@ -1,0 +1,114 @@
+<div class="dispatch-details-container">
+  <form (ngSubmit)="onSubmit()" #dispatchForm="ngForm">
+    <!-- Shipment Number -->
+    <div class="form-group">
+      <label for="shipmentNumber">Shipment Number</label>
+      <input type="text" id="shipmentNumber" name="shipmentNumber" [(ngModel)]="dispatchDetails.shipmentNumber" required>
+    </div>
+
+    <!-- Airway Bill Number -->
+    <div class="form-group">
+      <label for="airwayBillNumber">Airway Bill Number</label>
+      <input type="text" id="airwayBillNumber" name="airwayBillNumber" [(ngModel)]="dispatchDetails.airwayBillNumber" required>
+    </div>
+
+    <!-- Delivery Type -->
+    <div class="form-group">
+      <label for="deliveryType">Delivery Type</label>
+      <select id="deliveryType" name="deliveryType" [(ngModel)]="dispatchDetails.deliveryType" required>
+        <option *ngFor="let type of deliveryTypes" [value]="type">{{ type }}</option>
+      </select>
+    </div>
+
+    <!-- Vendor Information -->
+    <div class="form-group">
+      <label for="vendor">Vendor</label>
+      <input type="text" id="vendor" name="vendor" [(ngModel)]="dispatchDetails.vendor" required>
+    </div>
+
+    <!-- Destination Type -->
+    <div class="form-group">
+      <label for="destinationType">Destination Type</label>
+      <select id="destinationType" name="destinationType" [(ngModel)]="dispatchDetails.destinationType" required>
+        <option *ngFor="let type of destinationTypes" [value]="type">{{ type }}</option>
+      </select>
+    </div>
+
+    <!-- Pick Request Number -->
+    <div class="form-group">
+      <label for="pickRequestNumber">Pick Request Number</label>
+      <input type="text" id="pickRequestNumber" name="pickRequestNumber" [(ngModel)]="dispatchDetails.pickRequestNumber" required>
+    </div>
+
+    <!-- Reference Number (Non-editable) -->
+    <div class="form-group">
+      <label for="referenceNumber">Reference Number</label>
+      <input type="text" id="referenceNumber" name="referenceNumber" [(ngModel)]="dispatchDetails.referenceNumber" readonly>
+    </div>
+
+    <!-- Consignee Name (Non-editable) -->
+    <div class="form-group">
+      <label for="consigneeName">Consignee Name</label>
+      <input type="text" id="consigneeName" name="consigneeName" [(ngModel)]="dispatchDetails.consigneeName" readonly>
+    </div>
+
+    <!-- Consignee Address Lines (Non-editable) -->
+    <div class="form-group">
+      <label for="conAdd1">Consignee Address Line 1</label>
+      <input type="text" id="conAdd1" name="conAdd1" [(ngModel)]="dispatchDetails.conAdd1" readonly>
+    </div>
+    <div class="form-group">
+      <label for="conAdd2">Consignee Address Line 2</label>
+      <input type="text" id="conAdd2" name="conAdd2" [(ngModel)]="dispatchDetails.conAdd2" readonly>
+    </div>
+    <div class="form-group">
+      <label for="conAdd3">Consignee Address Line 3</label>
+      <input type="text" id="conAdd3" name="conAdd3" [(ngModel)]="dispatchDetails.conAdd3" readonly>
+    </div>
+
+    <!-- Consignee City (Non-editable) -->
+    <div class="form-group">
+      <label for="conCity">Consignee City</label>
+      <input type="text" id="conCity" name="conCity" [(ngModel)]="dispatchDetails.conCity" readonly>
+    </div>
+
+    <!-- Consignee State (Non-editable) -->
+    <div class="form-group">
+      <label for="conState">Consignee State</label>
+      <input type="text" id="conState" name="conState" [(ngModel)]="dispatchDetails.conState" readonly>
+    </div>
+
+    <!-- Destination Pin Code (Non-editable) -->
+    <div class="form-group">
+      <label for="desPin">Destination Pin Code</label>
+      <input type="text" id="desPin" name="desPin" [(ngModel)]="dispatchDetails.desPin" readonly>
+    </div>
+
+    <!-- Weight -->
+    <div class="form-group">
+      <label for="weight">Weight</label>
+      <input type="text" id="weight" name="weight" [(ngModel)]="dispatchDetails.weight" required>
+    </div>
+
+    <!-- Weight Unit -->
+    <div class="form-group">
+      <label for="weightUnit">Weight Unit</label>
+      <select id="weightUnit" name="weightUnit" [(ngModel)]="dispatchDetails.weightUnit" required>
+        <option *ngFor="let unit of weightUnits" [value]="unit">{{ unit }}</option>
+      </select>
+    </div>
+
+    <!-- GM Dropdown -->
+    <div class="form-group">
+      <label for="gm">GM</label>
+      <select id="gm" name="gm" [(ngModel)]="dispatchDetails.gm" maxlength="10" required>
+        <option value="Grm">Grm</option>
+      </select>
+    </div>
+
+    <!-- Save Button -->
+    <div class="form-group">
+      <button type="submit" [disabled]="!dispatchForm.form.valid">Save</button>
+    </div>
+  </form>
+</div>

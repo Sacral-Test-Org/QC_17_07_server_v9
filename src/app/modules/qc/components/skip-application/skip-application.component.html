@@ -1,0 +1,24 @@
+<div class="skip-application-container">
+  <form (ngSubmit)="onSkip()">
+    <div class="form-group">
+      <label for="qcSkipReason">Reason for Skipping Application:</label>
+      <select id="qcSkipReason" [(ngModel)]="qcSkipReason" name="qcSkipReason" required>
+        <option value="" disabled selected>Select a reason</option>
+        <option *ngFor="let reason of skipReasons" [value]="reason">{{ reason }}</option>
+      </select>
+      <div *ngIf="showReasonError" class="error-message">
+        Please Select Reason For Skipping Application.
+      </div>
+    </div>
+
+    <div class="form-group" *ngIf="qcSkipReason === 'OTHERS'">
+      <label for="qcSkipComments">Comments:</label>
+      <textarea id="qcSkipComments" [(ngModel)]="qcSkipComments" name="qcSkipComments" required></textarea>
+      <div *ngIf="showCommentsError" class="error-message">
+        Please Enter comments.
+      </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Skip</button>
+  </form>
+</div>

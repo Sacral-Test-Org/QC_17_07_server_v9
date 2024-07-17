@@ -1,0 +1,101 @@
+/* src/app/modules/qc/components/user-authentication/user-authentication.component.scss */
+
+/* General form styling */
+.user-authentication-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the multi-line text area */
+.user-authentication-form textarea {
+  width: 100%;
+  max-width: 500px;
+  height: 100px;
+  max-height: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  resize: vertical;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.user-authentication-form textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Style for input fields */
+.user-authentication-form input[type="text"],
+.user-authentication-form input[type="password"] {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.user-authentication-form input[type="text"]:focus,
+.user-authentication-form input[type="password"]:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Style for the Supervisor ID input field */
+.user-authentication-form .supervisor-id {
+  position: absolute;
+  top: 43px;
+  left: 103px;
+  width: 80px;
+  height: 18px;
+  text-transform: uppercase;
+  font-family: 'MS Sans Serif', sans-serif;
+  font-weight: bold;
+  font-size: 800;
+}
+
+/* Style for the password field */
+.user-authentication-form .password {
+  position: absolute;
+  top: 70px;
+  left: 103px;
+  width: 80px;
+  height: 18px;
+  font-family: 'MS Sans Serif', sans-serif;
+  font-weight: bold;
+  font-size: 800;
+}
+
+/* Style for the Authenticate button */
+.user-authentication-form button {
+  width: 100%;
+  max-width: 150px;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.user-authentication-form button:hover {
+  background-color: #0056b3;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for error messages */
+.user-authentication-form .error-message {
+  color: #ff0000;
+  font-size: 14px;
+  margin-bottom: 10px;
+}

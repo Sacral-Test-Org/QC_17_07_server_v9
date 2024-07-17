@@ -1,0 +1,52 @@
+/* src/app/modules/qc/components/fund-details/fund-details.component.scss */
+
+/* General styling for the fund details component */
+.fund-details-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for each field */
+.fund-field {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+}
+
+/* Styling for field labels */
+.fund-field-label {
+  font-weight: bold;
+  color: #333333;
+}
+
+/* Styling for field values */
+.fund-field-value {
+  color: #666666;
+}
+
+/* Styling for read-only fields */
+.fund-field-readonly {
+  background-color: #f0f0f0;
+  cursor: not-allowed;
+}
+
+/* Additional styling for better readability */
+.fund-details-header {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+.fund-details-footer {
+  margin-top: 20px;
+  text-align: right;
+  color: #999999;
+}

@@ -1,0 +1,78 @@
+/* Style the dispatch details UI */
+.dispatch-details-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dispatch-details-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.dispatch-details-form .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.dispatch-details-form .form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.dispatch-details-form .form-group input,
+.dispatch-details-form .form-group select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.dispatch-details-form .form-group select {
+  appearance: none;
+  background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEuNzA3MTcsNC4yOTI5N0wxLjcwNzE3LDQuMjkyOTdDMS4zMTQ4OSwzLjkwMDc0IDEuMzE0ODksMy4zMTQ4OSAxLjcwNzE3LDIuOTI5NzFMNy4yOTI5NywxLjcwNzE3QzcuNjg1MTQsMS4zMTQ4OSw4LjMxNDUxLDEuMzE0ODkgOC42OTI5NywxLjcwNzE3TDExLjI5MjksNC4yOTI5N0MxMS42ODUxNCw0LjY4NTE0IDExLjY4NTE0LDUuMzE0ODkgMTEuMjkyOSw1LjcwNzE3TDguNjkyOTcsOC4yOTI5N0M4LjMxNDUxLDguNjg1MTQgNy42ODUxNCw4LjY4NTE0IDcuMjkyOTcsOC4yOTI5N0wzLjcwNzE3LDUuNzA3MTdDMy4zMTQ4OSw1LjMxNDg5IDMuMzE0ODksNC42ODUxNCAzLjcwNzE3LDQuMjkyOTdMMTAuMjkyOSw3LjcwNzE3QzEwLjY4NTE0LDguMDk5MjkgMTAuNjg1MTQsOC43MTQ4OSAxMC4yOTI5LDkuMTA3MTdMMTMsMTEuNzA3MUMxMy4zMTQ4OSwxMi4wOTkyOSAxMy4zMTQ4OSwxMi42ODUxNCAxMywxMy4wNzE3TDEwLjI5MjksMTUuMjkyOUM5LjkwMDc0LDE1LjY4NTE0IDkuMzE0ODksMTUuNjg1MTQgOC45Mjk3MSwxNS4yOTI5TDEuNzA3MTcsOC4yOTI5N0MxLjMxNDg5LDcuOTAwNzQgMS4zMTQ4OSw3LjMxNDg5IDEuNzA3MTcsNi45Mjk3MUw3LjI5Mjk3LDEuNzA3MTdDNy42ODUxNCwxLjMxNDg5IDguMzE0NTEsMS4zMTQ4OSA4LjY5Mjk3LDEuNzA3MTdMMTEuMjkyOSw0LjI5MjlDMTIuNjg1MTQsNS42ODUxNCAxMi42ODUxNCw3LjMxNDg5IDExLjI5MjksOC42OTI5N0w3LjI5Mjk3LDEyLjI5MjlDNi45MDA3NCwxMi42ODUxNCA2LjMxNDg5LDEyLjY4NTE0IDUuOTI5NzEsMTIuMjkyOUwxLjcwNzE3LDguMTA3MTdDMS4zMTQ4OSw3LjcxNDg5IDEuMzE0ODksNy4wOTkyOSAxLjcwNzE3LDYuNzA3MTdMMTAuMjkyOSwzLjcwNzE3QzEwLjY4NTE0LDMuMzE0ODkgMTAuNjg1MTQsMi42ODUxNCAxMC4yOTI5LDIuMjkyOTdMMTMsMC4yOTI5NzE0QzEzLjMxNDg5LC0wLjA5OTI5Mjg1IDEzLjMxNDg5LC0wLjY4NTE0MDE0IDEzLC0xLjA3MTcxTDEwLjI5MjksLTMuMjkyOTcxQzkuOTAwNzQsLTMuNjg1MTQwMTQgOS4zMTQ4OSwtMy42ODUxNDAxNCA4LjkyOTcxLC0zLjI5Mjk3MTQxTDEuNzA3MTcsMy4yOTI5NzE0QzEuMzE0ODksMy42ODUxNDAxNCAxLjMxNDg5LDQuMjkyOTcxNCAxLjcwNzE3LDQuNjg1MTQwMTNMMTAuMjkyOSw3LjcwNzE3QzEwLjY4NTE0LDguMDk5MjkwMTQgMTAuNjg1MTQsOC43MTQ4OTAxNCAxMC4yOTI5LDkuMTA3MTcwMTNMMTMsMTEuNzA3MUMxMy4zMTQ4OSwxMi4wOTkyOTAxNCAxMy4zMTQ4OSwxMi42ODUxNDAxNCAxMywxMy4wNzE3MDE0TDEwLjI5MjksMTUuMjkyOTcwMTNDOS45MDA3NCwxNS42ODUxNDAxNCA5LjMxNDg5LDE1LjY4NTE0MDE0IDguOTI5NzEsMTUuMjkyOTcwMTNMMi4yOTI5Nyw4LjcwNzE3MDE0QzEuOTAwNzQsOC4zMTQ4OTAxNCAxLjMxNDg5LDguMzE0ODkwMTQgMC45Mjk3MSw4LjcwNzE3MDE0TDAuMjkyOTcsOS4yOTI5NzAxNEMtMC4wOTkyOTI4NTQsOS42ODUxNDAxNCAtMC4wOTkyOTI4NTQsMTAuMjkyOTcwMTQgMC4yOTI5NywxMC42ODUxNDAxM0wxLjcwNzE3LDEyLjI5MjlDMS4zMTQ4OSwxMi42ODUxNDAxNCAxLjMxNDg5LDEzLjMxNDg5MDE0IDEuNzA3MTcsMTMuNzA3MTcwMTNMMTAuMjkyOSwxNi4yOTI5NzAxM0MxMC42ODUxNCwxNi42ODUxNDAxNCAxMS4zMTQ4OSwxNi42ODUxNDAxNCAxMS42OTI5NywxNi4yOTI5NzAxM0wxNC4yOTI5LDExLjcwNzE3MDE0QzE0LjY4NTE0LDExLjMxNDg5MDE0IDE0LjY4NTE0LDEwLjY4NTE0MDE0IDE0LjI5MjksMTAuMjkyOTcwMTNMMTAsNi4yOTI5NzAxM0M5LjY4NTE0LDYuMDk5MjkwMTQgOS4zMTQ4OSw1LjY4NTE0MDE0IDguOTI5NzEsNS4yOTI5NzAxM0wzLjcwNzE3LDEuNzA3MTcwMTNDMy4zMTQ4OSwxLjMxNDg5MDE0IDMuMzE0ODksMC42ODUxNDAxNCAzLjcwNzE3LDAuMjkyOTcwMTM0TDEwLjI5MjksLTMuMjkyOTcwMTM0QzEwLjY4NTE0LC0zLjY4NTE0MDE0IDExLjMxNDg5LC0zLjY4NTE0MDE0IDExLjY5Mjk3LC0zLjI5Mjk3MDEzNFoiIGZpbGw9IiMwMDAwMDAiLz4KPC9zdmc+Cg==') no-repeat right 10px center;
+  background-size: 12px;
+}
+
+.dispatch-details-form .form-group .gm-dropdown {
+  max-width: 200px;
+}
+
+.dispatch-details-form .form-group .gm-dropdown option {
+  padding: 10px;
+}
+
+.dispatch-details-form .form-group .gm-dropdown option[value="Grm"] {
+  font-weight: bold;
+}
+
+.dispatch-details-form .form-group .gm-dropdown:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.dispatch-details-form .form-group .gm-dropdown:disabled {
+  background-color: #e9ecef;
+  cursor: not-allowed;
+}
+
+.dispatch-details-form .form-group .gm-dropdown[readonly] {
+  background-color: #f8f9fa;
+  cursor: default;
+}
+
+.dispatch-details-form .form-group .gm-dropdown[readonly]:focus {
+  border-color: #ced4da;
+  box-shadow: none;
+}
+
+.dispatch-details-form .form-group .gm-dropdown[readonly] option {
+  color: #6c757d;
+}
+
+.dispatch-details-form .form-group .gm-dropdown[readonly] option[value="Grm"] {
+  font-weight: normal;
+}

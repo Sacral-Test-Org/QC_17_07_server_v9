@@ -1,0 +1,56 @@
+<div class="user-authentication-container">
+  <form [formGroup]="authForm" (ngSubmit)="onAuthenticate()">
+    <!-- Supervisor ID Input Field -->
+    <div class="form-group">
+      <label for="supervisorId">Supervisor ID</label>
+      <input
+        id="supervisorId"
+        type="text"
+        formControlName="supervisorId"
+        maxlength="10"
+        (input)="onSupervisorIdChange($event)"
+        class="form-control"
+        style="text-transform: uppercase;"
+      />
+      <div *ngIf="authForm.get('supervisorId').invalid && authForm.get('supervisorId').touched" class="error">
+        Supervisor ID is required and must be in uppercase.
+      </div>
+    </div>
+
+    <!-- Password Input Field -->
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input
+        id="password"
+        type="password"
+        formControlName="password"
+        maxlength="10"
+        class="form-control"
+        style="font-family: 'MS Sans Serif'; font-weight: bold; font-size: 800;"
+      />
+      <div *ngIf="authForm.get('password').invalid && authForm.get('password').touched" class="error">
+        Password is required.
+      </div>
+    </div>
+
+    <!-- Comments Text Area -->
+    <div class="form-group">
+      <label for="comments">Comments</label>
+      <textarea
+        id="comments"
+        formControlName="comments"
+        maxlength="500"
+        rows="5"
+        class="form-control"
+      ></textarea>
+      <div *ngIf="authForm.get('comments').invalid && authForm.get('comments').touched" class="error">
+        Comments must be less than 500 characters.
+      </div>
+    </div>
+
+    <!-- Authenticate Button -->
+    <div class="form-group">
+      <button type="submit" class="btn btn-primary" [disabled]="authForm.invalid">Authenticate</button>
+    </div>
+  </form>
+</div>

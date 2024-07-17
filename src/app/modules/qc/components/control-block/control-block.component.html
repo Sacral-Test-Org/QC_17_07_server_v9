@@ -1,0 +1,28 @@
+<div class="control-block">
+  <!-- Checkbox CH1 -->
+  <div class="form-group">
+    <label for="ch1">CH1</label>
+    <input type="checkbox" id="ch1" (change)="onCH1CheckboxChange($event)">
+  </div>
+
+  <!-- Reset Button -->
+  <div class="form-group">
+    <button (click)="onResetButtonClick()">Reset</button>
+  </div>
+
+  <!-- ENRICH Button -->
+  <div class="form-group">
+    <button (click)="onEnrichButtonClick()">ENRICH</button>
+  </div>
+
+  <!-- Checkbox CH3 -->
+  <div class="form-group">
+    <label for="ch3">CH3</label>
+    <input type="checkbox" id="ch3" (change)="onCH3CheckboxChange($event)">
+  </div>
+
+  <!-- Exit Button -->
+  <div class="form-group">
+    <button (click)="onExitButtonClick()">Exit</button>
+  </div>
+</div>

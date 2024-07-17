@@ -1,0 +1,46 @@
+<div class="fund-details-container">
+  <h2>Fund Details</h2>
+  <div class="fund-detail">
+    <label for="fund-id">Fund ID:</label>
+    <span id="fund-id">{{ fundDetails.fundId }}</span>
+  </div>
+  <div class="fund-detail">
+    <label for="fund-description">Fund Description:</label>
+    <span id="fund-description">{{ fundDetails.fundDescription }}</span>
+  </div>
+  <div class="fund-detail">
+    <label for="apportionment">Apportionment:</label>
+    <span id="apportionment">{{ fundDetails.apportionment }}</span>
+  </div>
+</div>
+
+<!-- Add some basic styling for readability -->
+<style>
+  .fund-details-container {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+  }
+
+  .fund-details-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .fund-detail {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  .fund-detail label {
+    font-weight: bold;
+  }
+
+  .fund-detail span {
+    font-style: italic;
+  }
+</style>

@@ -1,0 +1,8 @@
+<!-- src/app/modules/qc/components/reason-of-skip/reason-of-skip.component.html -->
+
+<div class="form-group">
+  <label for="reasonOfSkip">Reason Of Skip</label>
+  <select id="reasonOfSkip" class="form-control" [(ngModel)]="selectedReason">
+    <option *ngFor="let reason of reasons" [value]="reason">{{ reason }}</option>
+  </select>
+</div>
